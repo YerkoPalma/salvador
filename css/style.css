@@ -3,10 +3,10 @@
 @font-face {
 	font-family: 'fontawesome-selected';
 	src: url("font/fontawesome-selected.eot");
-	src: 
-	url("font/fontawesome-selected.eot?#iefix") format('embedded-opentype'), 
-	url("font/fontawesome-selected.woff") format('woff'), 
-	url("font/fontawesome-selected.ttf") format('truetype'), 
+	src:
+	url("font/fontawesome-selected.eot?#iefix") format('embedded-opentype'),
+	url("font/fontawesome-selected.woff") format('woff'),
+	url("font/fontawesome-selected.ttf") format('truetype'),
 	url("font/fontawesome-selected.svg#fontawesome-selected") format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -39,8 +39,8 @@
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	box-shadow: 
-		0 0 0 8px rgba(65,131,142,1), 
+	box-shadow:
+		0 0 0 8px rgba(65,131,142,1),
 		0 1px 1px rgba(255,255,255,0.5);
 	background-repeat: no-repeat;
 	border-radius: 50%;
@@ -64,7 +64,7 @@
 }
 
 .thumb span {
-	color: #41838e; 
+	color: #41838e;
 	width: 100%;
 	text-align: center;
 	font-weight: 700;
@@ -87,7 +87,7 @@
 }
 
 .user-4 {
-	background-image: url(../images/darthvader.jpg);
+	background-image: url(../images/3-sep.jpg);
 }
 
 .user-5 {
@@ -307,8 +307,8 @@
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	box-shadow: 
-		0 0 0 8px rgba(242,99,40,1), 
+	box-shadow:
+		0 0 0 8px rgba(242,99,40,1),
 		0 1px 1px rgba(255,255,255,0.5);
 }
 
@@ -326,7 +326,7 @@
 	-webkit-backface-visibility: hidden;
 }
 
-@media screen and (max-width: 850px) { 
+@media screen and (max-width: 850px) {
 	.content-inner h3 {
 		font-size: 20px;
 	}
@@ -337,7 +337,7 @@
 	}
 
 	.event input[type="radio"]:checked ~ .content-perspective .content-inner p {
-		max-height: 500px; 
+		max-height: 500px;
 	}
 }
 
@@ -346,7 +346,7 @@
 		left: 50px;
 	}
 
-	.event { 
+	.event {
 		padding-right: 0px;
 		margin-bottom: 100px;
 	}
@@ -378,12 +378,12 @@
 	}
 
 	.content-perspective {
-		margin-left: 0px; 
+		margin-left: 0px;
 		top: 80px;
 	}
 
 	.content-perspective:before {
-		height: 0px; 
+		height: 0px;
 	}
 
 	.content {
@@ -419,10 +419,6 @@
 	}
 
 	.event input[type="radio"]:checked ~ .content-perspective .content-inner p {
-		max-height: 300px; 
+		max-height: 300px;
 	}
 }
-
-
-
-
