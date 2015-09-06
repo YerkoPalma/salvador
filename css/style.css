@@ -87,7 +87,7 @@
 }
 
 .user-4 {
-	background-image: url(../images/3-sep.jpg);
+	background-image: url(../images/inicio.jpg);
 }
 
 .user-5 {
@@ -320,6 +320,7 @@
 	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAOfUjX+882+wYgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQBbNyaHFmzEqgAAAABJRU5ErkJggg==);
 }
 
+.content-inner a,
 .content-inner p,
 .thumb span,
 .event label {
