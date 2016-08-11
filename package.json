@@ -1,0 +1,26 @@
+{
+  "name": "salvador",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Salvador Aarón Palma Navea</h1> <hr>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/live-server .",
+    "test": "standard --verbose | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YerkoPalma/salvador.git"
+  },
+  "author": "YerkoPalma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YerkoPalma/salvador/issues"
+  },
+  "homepage": "https://github.com/YerkoPalma/salvador#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "live-server": "^1.0.0",
+    "snazzy": "^4.0.1",
+    "standard": "^7.1.2"
+  }
+}
