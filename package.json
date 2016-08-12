@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">Salvador Aarón Palma Navea</h1> <hr>",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/live-server .",
+    "dev": "budo src/app.js --open --live --pushstate --",
     "test": "standard --verbose | snazzy"
   },
   "browserify": {
@@ -27,6 +27,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "budo": "^8.3.0",
     "insert-css": "^0.2.0",
     "live-server": "^1.0.0",
     "sheetify": "^5.0.5",

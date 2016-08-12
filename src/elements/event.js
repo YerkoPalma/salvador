@@ -11,7 +11,9 @@ function timeEvent (event) {
         <div class="content-inner">
           <h3>${event.title}</h3>
           <p>${event.description}</p>
-          <a href="${event.image}"><img src="${event.image}"/></a>
+          ${event.images.forEach(image => {
+            return html`<a href="${image}"><img src="${image}"/></a>`
+          })}
         </div>
       </div>
     </div>
