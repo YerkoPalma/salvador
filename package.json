@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "budo src/app.js --open --live --pushstate --",
+    "copy": "mkdir -p dist && cp CNAME index.html src/assets/css/demo.css dist/ && cp -R src/assets/images/ src/assets/css/font dist/",
+    "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
+    "build": "npm run copy && NODE_ENV=production npm run build:js",
     "test": "standard --verbose | snazzy"
   },
   "browserify": {
@@ -28,11 +31,14 @@
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "budo": "^8.3.0",
+    "html-minifier": "^3.0.2",
     "insert-css": "^0.2.0",
     "live-server": "^1.0.0",
     "sheetify": "^5.0.5",
     "snazzy": "^4.0.1",
-    "standard": "^7.1.2"
+    "standard": "^7.1.2",
+    "uglifyify": "^3.0.2",
+    "uglifyjs": "^2.4.10"
   },
   "dependencies": {
     "choo": "^3.2.0"
