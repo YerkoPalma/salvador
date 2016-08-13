@@ -2,7 +2,7 @@ const choo = require('choo')
 const sf = require('sheetify')
 const mainView = require('./views/main')
 
-sf('./style.css', { global: true })
+sf('./css/style.css', { global: true })
 
 const app = choo()
 
