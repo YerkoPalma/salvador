@@ -1,4 +1,4 @@
-const events = require('')
+const events = require('../data.json')
 
 module.exports = {
   state: {
