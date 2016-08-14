@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "budo src/app.js --open --live --pushstate --",
-    "copy": "mkdir -p dist && cp CNAME index.html src/assets/css/demo.css dist/ && cp -R src/assets/images/ src/assets/css/font dist/",
+    "copy": "mkdir -p dist && cp CNAME index.html src/data.json src/assets/css/demo.css dist/ && cp -R src/assets/images/ src/assets/css/font dist/",
     "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
-    "build": "npm run copy && NODE_ENV=production npm run build:js",
+    "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js",
     "test": "standard --verbose | snazzy"
   },
   "browserify": {

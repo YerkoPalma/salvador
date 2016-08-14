@@ -5,7 +5,7 @@ module.exports = {
     // should require some json with data
     title: 'Salvador Aarón Palma Navea',
     subTitle: 'Su primer añito',
-    events
+    events: events
   },
   reducers: {
     /**

@@ -1,7 +1,5 @@
-const html = require('choo/html')
-
 function timeEvent (event) {
-  return html`
+  return `
   <li class="event">
     <input type="radio" name="tl-group" checked />
     <label></label>
@@ -11,9 +9,15 @@ function timeEvent (event) {
         <div class="content-inner">
           <h3>${event.title}</h3>
           <p>${event.description}</p>
-          ${event.images.forEach(image => {
-            return html`<a href="${image}"><img src="${image}"/></a>`
-          })}
+          ${event.images.reduce((initialImage, currentImage) => {
+            const initialTag = initialImage && initialImage !== ''
+                              ? `<a href="${initialImage}"><img src="${initialImage}"/></a>`
+                              : ''
+            const currentTag = currentImage && currentImage !== ''
+                              ? `<a href="${currentImage}"><img src="${currentImage}"/></a>`
+                              : ''
+            return initialTag + currentTag
+          }, '')}
         </div>
       </div>
     </div>
