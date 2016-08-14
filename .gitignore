@@ -1,0 +1,4 @@
+node_modules
+*.log
+.c9
+dist
