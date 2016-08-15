@@ -1,13 +1,13 @@
-@import url('demo.css');
+@import url('src/assets/css/demo.css');
 
 @font-face {
   font-family: 'fontawesome-selected';
   src: url("font/fontawesome-selected.eot");
   src:
-  url("font/fontawesome-selected.eot?#iefix") format('embedded-opentype'),
-  url("font/fontawesome-selected.woff") format('woff'),
-  url("font/fontawesome-selected.ttf") format('truetype'),
-  url("font/fontawesome-selected.svg#fontawesome-selected") format('svg');
+  url("src/assets/css/font/fontawesome-selected.eot?#iefix") format('embedded-opentype'),
+  url("src/assets/css/font/fontawesome-selected.woff") format('woff'),
+  url("src/assets/css/font/fontawesome-selected.ttf") format('truetype'),
+  url("src/assets/css/font/fontawesome-selected.svg#fontawesome-selected") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -75,35 +75,35 @@
 }
 
 .user-1 {
-  background-image: url(../images/11-jul160.jpg);
+  background-image: url(src/assets/images/11-jul160.jpg);
 }
 
 .user-2 {
-  background-image: url(../images/7-abr160.jpg);
+  background-image: url(src/assets/images/7-abr160.jpg);
 }
 
 .user-3 {
-  background-image: url(../images/papa160.jpg);
+  background-image: url(src/assets/images/papa160.jpg);
 }
 
 .user-4 {
-  background-image: url(../images/inicio.jpg);
+  background-image: url(src/assets/images/inicio.jpg);
 }
 
 .user-5 {
-  background-image: url(../images/mati160.jpg);
+  background-image: url(src/assets/images/mati160.jpg);
 }
 
 .user-6 {
-  background-image: url(../images/mama160.jpg);
+  background-image: url(src/assets/images/mama160.jpg);
 }
 
 .user-7 {
-  background-image: url(../images/27-jun160.jpg);
+  background-image: url(src/assets/images/27-jun160.jpg);
 }
 
 .user-8 {
-  background-image: url(../images/29-ago160.jpg);
+  background-image: url(src/assets/images/29-ago160.jpg);
 }
 
 /* Transparent Checkbox/radio hack: leave the checkbox on top, hide it with opacity 0 */

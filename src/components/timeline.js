@@ -4,8 +4,8 @@ const timeEvent = require('../elements/event')
 function timeLine (state, send) {
   return html`
   <ul class="timeline">
-    ${state.events.forEach(e => {
-      return timeEvent(e)
+    ${state.events.map((event) => {
+      return timeEvent(event)
     })}
   </ul>
   `
