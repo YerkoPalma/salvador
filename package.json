@@ -2,13 +2,14 @@
   "name": "salvador",
   "version": "1.0.0",
   "description": "<h1 align=\"center\">Salvador Aarón Palma Navea</h1> <hr>",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "dev": "budo src/app.js --open --live --pushstate --",
-    "copy": "mkdir -p dist && cp CNAME index.html src/data.json src/assets/css/demo.css dist/ && cp -R src/assets/images/ src/assets/css/font dist/",
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "copy": "mkdir -p dist/src/assets && cp CNAME index.html src/data.json dist/ && cp -R src/assets/ dist/src",
     "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
     "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js",
-    "test": "standard --verbose | snazzy"
+    "test": "npm run deps && standard --verbose | snazzy"
   },
   "browserify": {
     "transform": [
@@ -31,6 +32,7 @@
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "budo": "^8.3.0",
+    "dependency-check": "^2.6.0",
     "html-minifier": "^3.0.2",
     "insert-css": "^0.2.0",
     "live-server": "^1.0.0",
