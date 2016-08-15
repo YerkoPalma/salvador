@@ -9,6 +9,7 @@
     "copy": "mkdir -p dist/src/assets && cp CNAME index.html src/data.json dist/ && cp -R src/assets/ dist/src",
     "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
     "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js",
+    "deploy": "npm run build && surge ./dist salvador.palmanavea.com",
     "test": "npm run deps && standard --verbose | snazzy"
   },
   "browserify": {
