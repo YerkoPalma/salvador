@@ -44,6 +44,7 @@
     "uglifyjs": "^2.4.10"
   },
   "dependencies": {
-    "choo": "^3.2.0"
+    "choo": "^3.2.0",
+    "lightgallery.js": "0.0.3"
   }
 }

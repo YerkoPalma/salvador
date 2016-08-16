@@ -12,5 +12,5 @@ app.router(route => [
   route('/', mainView)
 ])
 
-const tree = app.start()
+const tree = app.start({ hash: true })
 document.body.appendChild(tree)

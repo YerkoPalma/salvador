@@ -1,3 +1,4 @@
+/* global lightGallery */
 const html = require('choo/html')
 
 function timeEvent (event) {
@@ -11,9 +12,11 @@ function timeEvent (event) {
         <div class="content-inner">
           <h3>${event.title}</h3>
           <p>${event.description}</p>
-          ${event.images.map((image) => {
-            return html`<a href="src/assets/${image}"><img src="src/assets/${image}"/></a>`
-          }, '')}
+          <div class="lightgallery" onload=${(el) => { lightGallery(el) }}>
+            ${event.images.map((image) => {
+              return html`<a href="src/assets/${image}"><img src="src/assets/${image}"/></a>`
+            }, '')}
+          </div>
         </div>
       </div>
     </div>
