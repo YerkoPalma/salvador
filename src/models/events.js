@@ -1,10 +1,4 @@
-const getNumeral = year => {
-  if ( year === 1 ) {
-    return 'primer'
-  } else if ( year === 2 ) {
-    return 'segundo'
-  }
-}
+const { getNumeral, fs } = require('../util') 
 
 module.exports = {
   state: {
@@ -37,8 +31,10 @@ module.exports = {
                    ? data.year
                    : 1
       const sub = getNumeral(year)
-      const events = require(`../data/${year}.json`)
-      send('setEvents', { year: data.year, events, sub })
+      fs.read(`../data/${year}.json`, response => {
+        const events = JSON.parse(response.responseText)
+        send('setEvents', { year: data.year, events, sub })
+      }) //require(`../data/${year}.json`)
     }
   }
 }
