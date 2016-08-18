@@ -1,22 +1,44 @@
-const events = require('../data.json')
+const getNumeral = year => {
+  if ( year === 1 ) {
+    return 'primer'
+  } else if ( year === 2 ) {
+    return 'segundo'
+  }
+}
 
 module.exports = {
   state: {
     // should require some json with data
     title: 'Salvador Aarón Palma Navea',
     subTitle: 'Su primer añito',
-    events: events
+    current: 1,
+    availaibleYears: 2,
+    events: []
   },
   reducers: {
     /**
-     * set initial data
+     * set the events for the given year
      */
-    init: (data, state) => {}
+    setEvents: (data, state) => {
+      return {
+        current: data.year,
+        events: data.events,
+        subTitle: `Su ${data.sub} añito`
+      }
+    }
   },
   effects: {
     /**
-     * player move
+     * get the events for the given year
      */
-    makeMove: (data, state, send, done) => {}
+    setYear: (data, state, send, done) => {
+      // check that the given year is valid
+      const year = data.year && data.year < state.availaibleYears
+                   ? data.year
+                   : 1
+      const sub = getNumeral(year)
+      const events = require(`../data/${year}.json`)
+      send('setEvents', { year: data.year, events, sub })
+    }
   }
 }

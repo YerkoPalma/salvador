@@ -9,7 +9,7 @@ const app = choo()
 app.model(require('./models/events'))
 
 app.router(route => [
-  route('/', mainView)
+  route('/:year', mainView)
 ])
 
 const tree = app.start({ hash: true })
