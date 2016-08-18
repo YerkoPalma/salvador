@@ -33,6 +33,7 @@
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "budo": "^8.3.0",
+    "choo-log": "^1.4.0",
     "dependency-check": "^2.6.0",
     "html-minifier": "^3.0.2",
     "insert-css": "^0.2.0",

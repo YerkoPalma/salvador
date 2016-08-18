@@ -8,6 +8,7 @@ const mainView = (state, prev, send) => {
       ${pageHeader(state.title, state.subTitle)}
       <section class="main">
         ${timeLine(state, send)}
+        <a onclick=${(e) => send('next', { year: state.current + 1 })}>Next</a>
       </section>
     </div>
   `
