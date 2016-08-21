@@ -1,4 +1,5 @@
-const { getNumeral, fs } = require('../util') 
+const { getNumeral } = require('../util')
+const allYears = require('../data.json')
 
 module.exports = {
   state: {
@@ -7,7 +8,7 @@ module.exports = {
     subTitle: 'Su primer añito',
     current: 1,
     availaibleYears: 2,
-    events: []
+    events: allYears[0]
   },
   reducers: {
     /**
@@ -27,14 +28,11 @@ module.exports = {
      */
     setYear: (data, state, send, done) => {
       // check that the given year is valid
-      const year = data.year && data.year < state.availaibleYears
+      const year = data.year && data.year <= state.availaibleYears
                    ? data.year
                    : 1
       const sub = getNumeral(year)
-      fs.read(`../data/${year}.json`, response => {
-        const events = JSON.parse(response.responseText)
-        send('setEvents', { year: data.year, events, sub })
-      }) //require(`../data/${year}.json`)
+      send('setEvents', { year: data.year, events: allYears[year - 1], sub }, done)
     }
   }
 }

@@ -3,10 +3,8 @@ const pageHeader = require('../elements/header')
 const timeLine = require('../components/timeline')
 
 const mainView = (state, prev, send) => {
-  const year = parseInt(state.params.year, 10) || 1
-  send('setYear', { year })
   const showNextLink = () => {
-    return html`<a href="/${state.current + 1}">Next</a>`
+    return html`<a href="#" onclick=${(e) => send('setYear', { year: state.current + 1 })}>Next</a>`
   }
   const showPrevLink = () => {
     return html`<a href="/${state.current - 1}">Prev</a>`
