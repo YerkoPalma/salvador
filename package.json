@@ -4,11 +4,11 @@
   "description": "<h1 align=\"center\">Salvador Aarón Palma Navea</h1> <hr>",
   "main": "src/app.js",
   "scripts": {
-    "dev": "budo src/app.js --open --live --pushstate --",
+    "dev": "budo src/app.js --open --live --pushstate --host 0.0.0.0 --port 8080 --",
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
-    "copy": "mkdir -p dist/src/assets && cp CNAME index.html src/data.json dist/ && cp -R src/assets/ dist/src",
+    "copy": "mkdir -p dist/src/assets && cp CNAME index.html dist/ && cp -R src/assets/ dist/src && cp -R src/data/ dist/",
     "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
-    "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js",
+    "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js -t envify -g uglifyify | uglifyjs",
     "deploy": "npm run build && surge ./dist salvador.palmanavea.com",
     "test": "npm run deps && standard --verbose | snazzy"
   },
@@ -35,6 +35,7 @@
     "budo": "^8.3.0",
     "choo-log": "^1.4.0",
     "dependency-check": "^2.6.0",
+    "envify": "^3.4.1",
     "html-minifier": "^3.0.2",
     "insert-css": "^0.2.0",
     "live-server": "^1.0.0",

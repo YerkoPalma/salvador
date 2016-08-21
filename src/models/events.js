@@ -1,50 +1,37 @@
+const { getNumeral } = require('../util')
+const allYears = require('../data.json')
+
 module.exports = {
   state: {
     title: 'Salvador Aarón Palma Navea',
     subTitle: 'Su primer añito',
     current: 1,
-    events: require('../data/1.json')
+    availaibleYears: 2,
+    events: allYears[0]
   },
   reducers: {
     /**
-     * go to the page
+     * set the events for the given year
      */
-    changeYear: (data, state) => {
+    setEvents: (data, state) => {
       return {
         current: data.year,
-        events: require(`../data/${data.year}.json`)
+        events: data.events,
+        subTitle: `Su ${data.sub} añito`
       }
     }
   },
   effects: {
     /**
-     * go to the next page (year)
+     * get the events for the given year
      */
-    next: (data, state, send, done) => {
-      // add 1 to the current year
-      send('changeYear', { year: data.year })
-
-      // now simulate a page change
-      const firstEvent = document.querySelector('li.event:first-child')
-      const selectedEvent = document.querySelector('input:checked')
-
-      // 1. uncheck the currently checked radiobutton
-      selectedEvent.checked = false
-      // 2. hide to the left every event with a delay
-      // 3. when done, fadeOut subTitle
-      // 4. fadeIn new subTitle
-      // 5. make new events appear from the right
-    },
-    /**
-     * go to the previous page (year)
-     */
-    prev: (data, state, send, done) => {}
-  },
-  subscriptions: [
-    (send, done) => {
-      document.addEventListener('transitionend', e => {
-        const target = e.target
-      })
+    setYear: (data, state, send, done) => {
+      // check that the given year is valid
+      const year = data.year && data.year <= state.availaibleYears
+                   ? data.year
+                   : 1
+      const sub = getNumeral(year)
+      send('setEvents', { year: data.year, events: allYears[year - 1], sub }, done)
     }
-  ]
+  }
 }
