@@ -4,10 +4,16 @@ const timeLine = require('../components/timeline')
 
 const mainView = (state, prev, send) => {
   const showNextLink = () => {
-    return html`<a href="#" onclick=${(e) => send('setYear', { year: state.current + 1 })}>Next</a>`
+    return html`
+      <a class="nav-link right" href="#" onclick=${(e) => send('setYear', { year: state.current + 1 })}>
+        <span class="icon-right-open"></span>
+      </a>`
   }
   const showPrevLink = () => {
-    return html`<a href="/${state.current - 1}">Prev</a>`
+    return html`
+      <a class="nav-link left" href="#" onclick=${(e) => send('setYear', { year: state.current - 1 })}>
+        <span class="icon-left-open"></span>
+      </a>`
   }
 
   return html`
