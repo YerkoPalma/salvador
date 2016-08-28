@@ -7,7 +7,7 @@ const mainView = (state, prev, send) => {
     return html`<a href="#" onclick=${(e) => send('setYear', { year: state.current + 1 })}>Next</a>`
   }
   const showPrevLink = () => {
-    return html`<a href="/${state.current - 1}">Prev</a>`
+    return html`<a href="#" onclick=${(e) => send('setYear', { year: state.current - 1 })}>Next</a>`
   }
 
   return html`
