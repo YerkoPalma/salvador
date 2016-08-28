@@ -103,6 +103,45 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url('src/assets/css/font/fontello.eot?86467655');
+  src: url('src/assets/css/font/fontello.eot?86467655#iefix') format('embedded-opentype'),
+       url('src/assets/css/font/fontello.woff2?86467655') format('woff2'),
+       url('src/assets/css/font/fontello.woff?86467655') format('woff'),
+       url('src/assets/css/font/fontello.ttf?86467655') format('truetype'),
+       url('src/assets/css/font/fontello.svg?86467655#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+ font-family: "fontello";
+ font-style: normal;
+ font-weight: normal;
+ speak: none;
+
+ display: inline-block;
+ text-decoration: inherit;
+ width: 1em;
+ text-align: center;
+ /* opacity: .8; */
+
+ /* For safety - reset parent styles, that can break glyph codes*/
+ font-variant: normal;
+ text-transform: none;
+
+ /* Font smoothing. That was taken from TWBS */
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+
+ /* Uncomment for 3D effect */
+ /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-right-open:before { content: '\e800'; } /* '' */
+.icon-left-open:before { content: '\e801'; } /* '' */
+
 .timeline {
   position: relative;
   list-style-type: none;
@@ -538,4 +577,23 @@ a img {
 }
 .event.hide {
    margin-left: -350%;
+}
+
+.nav-link {
+  background-color: #fff;
+  border-radius: 99px;
+      box-shadow: 3px 4px 0px #41838e;
+  padding: 10px 13px;
+  font-size: 26px;
+  color: #F26328;
+  position: fixed;
+  top: 50%;
+}
+
+.nav-link.right {
+  right: 30px;
+}
+
+.nav-link.left {
+  left: 30px;
 }
