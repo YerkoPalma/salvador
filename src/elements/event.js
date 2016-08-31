@@ -1,5 +1,7 @@
-/* global $ */
+/* global lightGallery */
 const html = require('choo/html')
+require('lightgallery.js')
+require('lg-video.js')
 
 function timeEvent (event, i) {
   return html`
@@ -25,7 +27,7 @@ function timeEvent (event, i) {
 }
 
 const imageGallery = (images, id) => {
-  return html`<div class="lightgallery" id="${id}" onload=${(el) => { $('#' + id).lightGallery({ thumbnail: true }) }}>
+  return html`<div class="lightgallery" id="${id}" onload=${(el) => { lightGallery(el) }}>
     ${images.map((image) => {
       return html`<a href="src/assets/${image}"><img src="src/assets/${image}"/></a>`
     }, '')}
@@ -47,8 +49,10 @@ const videoGallery = (videos) => {
       <ul id="html5-videos">
         ${videos.map((video, index) => {
           return html`
-            <li data-sub-html="video caption1" data-html="#video${index}" >
-              <img src="src/assets/3-sep" />
+            <li data-sub-html="video caption${index}" data-html="#video${index}" >
+              <a href>
+                <img src="src/assets/images/3-sep.jpg" />
+              </a>
             </li>`
         })}
       </ul>
