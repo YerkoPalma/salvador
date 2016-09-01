@@ -46,13 +46,11 @@ const videoGallery = (videos) => {
             </video>
           </div>`
       })}
-      <ul id="html5-videos">
+      <ul id="html5-videos" onload=${(el) => { lightGallery(el) }}>
         ${videos.map((video, index) => {
           return html`
             <li data-sub-html="video caption${index}" data-html="#video${index}" >
-              <a href>
-                <img src="src/assets/images/3-sep.jpg" />
-              </a>
+              <img src="src/assets/images/3-sep.jpg" />
             </li>`
         })}
       </ul>
