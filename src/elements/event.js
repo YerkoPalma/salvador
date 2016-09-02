@@ -17,7 +17,7 @@ function timeEvent (event, i) {
             ${
               event.type === 'image'
               ? imageGallery(event.images, 'event-' + i)
-              : videoGallery(event.images)
+              : videoGallery(event.images, i)
             }
         </div>
       </div>
@@ -34,12 +34,12 @@ const imageGallery = (images, id) => {
   </div>`
 }
 
-const videoGallery = (videos) => {
+const videoGallery = (videos, id) => {
   return html`
     <div>
       ${videos.map((video, index) => {
         return html`
-          <div style="display:none;" id="video${index}">
+          <div style="display:none;" id="video${id}">
             <video class="lg-video-object lg-html5" controls preload="none">
               <source src="src/assets/${video}" type="video/mp4">
                Your browser does not support HTML5 video.
@@ -49,7 +49,7 @@ const videoGallery = (videos) => {
       <ul id="html5-videos" onload=${(el) => { lightGallery(el) }}>
         ${videos.map((video, index) => {
           return html`
-            <li data-sub-html="video caption${index}" data-html="#video${index}" >
+            <li data-sub-html="video caption${index}" data-html="#video${id}" >
               <img src="src/assets/images/3-sep.jpg" />
             </li>`
         })}
