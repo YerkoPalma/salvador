@@ -236,6 +236,46 @@ a {
   background-image: url(src/assets/images/29-ago160.jpg);
 }
 
+.user-21 {
+  background-image: url(src/assets/images/second/25-sep-100x100.png);
+}
+
+.user-22 {
+  background-image: url(src/assets/images/second/17-oct-100x100.jpg);
+}
+
+.user-23 {
+  background-image: url(src/assets/images/second/18-oct-100x100.jpg);
+}
+
+.user-24 {
+  background-image: url(src/assets/images/second/17-nov-100x100.jpg);
+}
+
+.user-25 {
+  background-image: url(src/assets/images/second/22-dic-100x100.jpg);
+}
+
+.user-26 {
+  background-image: url(src/assets/images/second/17-feb-100x100.png);
+}
+
+.user-27 {
+  background-image: url(src/assets/images/second/5-mar-100x100.jpg);
+}
+
+.user-28 {
+  background-image: url(src/assets/images/second/9-jun-100x100.png);
+}
+
+.user-29 {
+  background-image: url(src/assets/images/second/25-jul-100x100.jpg);
+}
+
+.user-20 {
+  background-image: url(src/assets/images/second/7-ago-100x100.jpg);
+}
+
 /* Transparent Checkbox/radio hack: leave the checkbox on top, hide it with opacity 0 */
 
 .event label,
@@ -616,6 +656,7 @@ a img {
 .list-unstyled li {
   width: 25%;
   align-self: center;
+  cursor: pointer;
 }
 
 .list-unstyled li > img{

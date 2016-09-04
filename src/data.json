@@ -69,15 +69,16 @@
     {
       "date": "25 Sep",
       "title": "¡Voy a salir con mi papá!",
-      "thumbnail": "user-4",
+      "thumbnail": "user-21",
       "type": "video",
       "description": "",
+      "videoThumbnail": "25-sep-thumb.png",
       "images": ["images/second/25-sep.mp4"]
     },
     {
       "date": "17 Oct",
       "title": "Algo hizó mi papá",
-      "thumbnail": "user-6",
+      "thumbnail": "user-22",
       "type": "image",
       "description": "No se qué será pero están todos felices, menos yo porque me aburro. Así que lloré hasta que nos fuimos :)",
       "images": ["images/second/17-oct.jpg"]
@@ -85,7 +86,7 @@
     {
       "date": "18 Oct",
       "title": "Con mis hermanitos",
-      "thumbnail": "user-3",
+      "thumbnail": "user-23",
       "type": "image",
       "description": "A mis hermanitos les encanta jugar conmigo, no nos parecemos tanto de vista, pero nos queremos harto.",
       "images": ["images/second/18-oct.jpg"]
@@ -93,7 +94,7 @@
     {
       "date": "17 Nov",
       "title": "Con mi papá",
-      "thumbnail": "user-5",
+      "thumbnail": "user-24",
       "type": "image",
       "description": "",
       "images": ["images/second/17-nov.jpg"]
@@ -101,7 +102,7 @@
     {
       "date": "22 Dic",
       "title": "Ahora mi mamá",
-      "thumbnail": "user-2",
+      "thumbnail": "user-25",
       "type": "image",
       "description": "Mi mamá se vistio elegante y vinimos todos de paseo a este lugar raro. Parece que hizo algo bueno por que todos la felicitan... yo no se, pero estoy feliz por ella.",
       "images": ["images/second/22-dic.jpg"]
@@ -109,15 +110,16 @@
     {
       "date": "17 Feb",
       "title": "Lavandome los dientes",
-      "thumbnail": "user-7",
+      "thumbnail": "user-26",
       "type": "video",
+      "videoThumbnail": "17-feb-thumb.png",
       "description": "Mi mamá me dice que haga esto de lavarme los dientes, no se qué es, pero la imito. Lo que no sabe es que sólo lo haré para este video.",
       "images": ["images/second/17-feb.mp4"]
     },
     {
       "date": "05 Mar",
       "title": "Con mi mamá",
-      "thumbnail": "user-1",
+      "thumbnail": "user-27",
       "type": "image",
       "description": "",
       "images": ["images/second/5-mar.jpg"]
@@ -125,15 +127,16 @@
     {
       "date": "09 Jun",
       "title": "¡Como mis papás!",
-      "thumbnail": "user-8",
+      "thumbnail": "user-28",
       "type": "video",
+      "videoThumbnail": "9-jun-thumb.png",
       "description": "Mi papá a veces usa esta cosa, y mi mamá también, yo quiero ser como ellos",
       "images": ["images/second/9-jun.mp4"]
     },
     {
       "date": "25 Jul",
       "title": "Denuevo con mi mamita :)",
-      "thumbnail": "user-8",
+      "thumbnail": "user-29",
       "type": "image",
       "description": "Mi mamá ha estado más tiempo conmigo estos días... ojala sea siempre así",
       "images": ["images/second/25-jul.jpg"]
@@ -141,7 +144,7 @@
     {
       "date": "07 Ago",
       "title": "Preparandonos... ¿para qué?",
-      "thumbnail": "user-8",
+      "thumbnail": "user-20",
       "type": "image",
       "description": "Mis papas me están arreglando, para mi cumpleaños, no se qué es eso, pero hay pastel y todos cantan, sobretodo yo ^^",
       "images": ["images/second/7-ago.jpg"]

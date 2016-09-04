@@ -17,7 +17,7 @@ function timeEvent (event, i) {
             ${
               event.type === 'image'
               ? imageGallery(event.images, 'event-' + i)
-              : videoGallery(event.images, i)
+              : videoGallery(event, i)
             }
         </div>
       </div>
@@ -34,10 +34,10 @@ const imageGallery = (images, id) => {
   </div>`
 }
 
-const videoGallery = (videos, id) => {
+const videoGallery = (event, id) => {
   return html`
     <div>
-      ${videos.map((video, index) => {
+      ${event.images.map((video, index) => {
         return html`
           <div style="display:none;" id="video${id}">
             <video class="lg-video-object lg-html5" controls preload="none">
@@ -47,10 +47,10 @@ const videoGallery = (videos, id) => {
           </div>`
       })}
       <ul id="html5-videos" class="list-unstyled" onload=${(el) => { lightGallery(el) }}>
-        ${videos.map((video, index) => {
+        ${event.images.map((video, index) => {
           return html`
-            <li data-sub-html="video caption${index}" data-html="#video${id}" >
-              <img src="src/assets/images/3-sep.jpg" />
+            <li data-sub-html="${event.title}" data-html="#video${id}" >
+              <img src="src/assets/images/second/${event.videoThumbnail}" />
             </li>`
         })}
       </ul>
