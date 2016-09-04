@@ -6,7 +6,7 @@ require('lg-video.js')
 function timeEvent (event, i) {
   return html`
   <li class="event">
-    <input type="radio" name="tl-group" ${event.date === '03 Sep' ? 'checked' : ''} />
+    <input type="radio" name="tl-group" ${i === 0 ? 'checked' : ''} />
     <label></label>
     <div class="thumb ${event.thumbnail}"><span>${event.date}</span></div>
     <div class="content-perspective">

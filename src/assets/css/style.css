@@ -598,14 +598,33 @@ a img {
   left: 30px;
 }
 
+.lightgallery {
+  display: flex;
+  justify-content: space-around;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-unstyled li {
+  width: 25%;
+  align-self: center;
+}
+
+.list-unstyled li > img{
+  max-width: 100%;
 }
 
 .event input[type="radio"] ~ .content-perspective .content-inner ul{
   display: none;
 }
 .event input[type="radio"]:checked ~ .content-perspective .content-inner ul{
-  display: block;
+  display: flex;
 }
