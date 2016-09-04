@@ -18,6 +18,14 @@
       "babelify"
     ]
   },
+  "standard": {
+    "ignore": [
+      "service-worker.js",
+      "src/lg-utils.js",
+      "src/lightgallery.js",
+      "dist/"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YerkoPalma/salvador.git"
