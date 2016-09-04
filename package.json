@@ -38,6 +38,7 @@
     "envify": "^3.4.1",
     "html-minifier": "^3.0.2",
     "insert-css": "^0.2.0",
+    "lightgallery.js": "0.0.3",
     "live-server": "^1.0.0",
     "sheetify": "^5.0.5",
     "snazzy": "^4.0.1",
@@ -47,7 +48,6 @@
   },
   "dependencies": {
     "choo": "^3.2.0",
-    "lg-video.js": "0.0.3",
-    "lightgallery.js": "0.0.3"
+    "lg-video.js": "0.0.3"
   }
 }

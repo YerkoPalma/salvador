@@ -1,6 +1,6 @@
 /* global lightGallery */
 const html = require('choo/html')
-require('lightgallery.js')
+require('../lightgallery.js')
 require('lg-video.js')
 
 function timeEvent (event, i) {
