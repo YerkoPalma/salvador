@@ -46,7 +46,7 @@ const videoGallery = (videos, id) => {
             </video>
           </div>`
       })}
-      <ul id="html5-videos" onload=${(el) => { lightGallery(el) }}>
+      <ul id="html5-videos" class="list-unstyled" onload=${(el) => { lightGallery(el) }}>
         ${videos.map((video, index) => {
           return html`
             <li data-sub-html="video caption${index}" data-html="#video${id}" >
