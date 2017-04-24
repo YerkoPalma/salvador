@@ -9,7 +9,7 @@
     "copy": "mkdir -p dist/src/assets && cp CNAME index.html dist/ && cp -R src/assets/ dist/src && cp -R src/data.json dist/",
     "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
     "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js -t envify -g uglifyify | uglifyjs",
-    "deploy": "npm run build && surge ./dist salvador.palmanavea.com",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "npm run deps && standard --verbose | snazzy"
   },
   "browserify": {
@@ -44,6 +44,7 @@
     "choo-log": "^1.4.0",
     "dependency-check": "^2.6.0",
     "envify": "^3.4.1",
+    "gh-pages": "^0.12.0",
     "html-minifier": "^3.0.2",
     "insert-css": "^0.2.0",
     "lightgallery.js": "0.0.3",
