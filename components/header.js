@@ -3,8 +3,8 @@ var html = require('bel')
 
 function Header () {
   if (!(this instanceof Header)) return new Header()
-  this.title = null
-  this.subtitle = null
+  this.title = ''
+  this.subtitle = ''
   Nanocomponent.call(this)
 }
 Header.prototype = Object.create(Nanocomponent.prototype)
@@ -18,4 +18,9 @@ Header.prototype.createElement = function (title, subtitle) {
     </header>
   `
 }
+
+Header.prototype.update = function (title, subtitle) {
+  return (title && subtitle) && (title !== this.title || subtitle !== this.subtitle)
+}
+
 module.exports = Header

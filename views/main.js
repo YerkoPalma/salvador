@@ -4,9 +4,10 @@ var Header = require('../components/header')
 var header = Header()
 
 module.exports = function (state, emit) {
+  console.log(state)
   return html`
   <div class="container">
-    ${header.render('Salvador Aarón Palma Navea', 'Su primer añito')}
+    ${header.render(state.title, state.subtitle)}
     <section class="main">
       <div class="links">
       </div>
