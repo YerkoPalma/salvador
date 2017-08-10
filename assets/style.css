@@ -105,12 +105,12 @@ a {
 
 @font-face {
   font-family: 'fontello';
-  src: url('src/assets/css/font/fontello.eot?86467655');
-  src: url('src/assets/css/font/fontello.eot?86467655#iefix') format('embedded-opentype'),
-       url('src/assets/css/font/fontello.woff2?86467655') format('woff2'),
-       url('src/assets/css/font/fontello.woff?86467655') format('woff'),
-       url('src/assets/css/font/fontello.ttf?86467655') format('truetype'),
-       url('src/assets/css/font/fontello.svg?86467655#fontello') format('svg');
+  src: url('assets/font/fontello.eot?86467655');
+  src: url('assets/font/fontello.eot?86467655#iefix') format('embedded-opentype'),
+       url('assets/font/fontello.woff2?86467655') format('woff2'),
+       url('assets/font/fontello.woff?86467655') format('woff'),
+       url('assets/font/fontello.ttf?86467655') format('truetype'),
+       url('assets/font/fontello.svg?86467655#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -668,4 +668,7 @@ a img {
 }
 .event input[type="radio"]:checked ~ .content-perspective .content-inner ul{
   display: flex;
+}
+.dn {
+  display: none;
 }

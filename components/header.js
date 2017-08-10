@@ -9,18 +9,18 @@ function Header () {
 }
 Header.prototype = Object.create(Nanocomponent.prototype)
 
-Header.prototype.createElement = function (title, subtitle) {
-  this.title = title
-  this.subtitle = subtitle
+Header.prototype.createElement = function (state, emit) {
+  this.title = state.title
+  this.subtitle = state.subtitle
   return html`
     <header class="clearfix">
-      <h2>${title.trim()} <span>${subtitle.trim()}</span></h2>
+      <h2>${this.title.trim()} <span>${this.subtitle.trim()}</span></h2>
     </header>
   `
 }
 
-Header.prototype.update = function (title, subtitle) {
-  return (title && subtitle) && (title !== this.title || subtitle !== this.subtitle)
+Header.prototype.update = function (state, emit) {
+  return (state.title && state.subtitle) && (state.title !== this.title || state.subtitle !== this.subtitle)
 }
 
 module.exports = Header
