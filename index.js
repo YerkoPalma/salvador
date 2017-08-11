@@ -14,13 +14,13 @@ app.use(function (state, emitter) {
   state.title = 'Salvador Aarón Palma Navea'
   state.subtitle = 'Su primer añito'
   state.current = 1
-  state.availaibleYears = 3
-  state._events = state.events
-  state.events = allYears[0]
+  state.availaibleYears = 2
+  state._events = allYears[0]
   emitter.on('setYear', function (year) {
     state.current = year
+    state._events = allYears[year - 1]
     emitter.emit('log:info', 'Going to ' + year)
-    emitter.emit(state._events.PUSHSTATE, '/?year=' + year)
+    emitter.emit(state.events.PUSHSTATE, '/?year=' + year)
   })
 })
 
