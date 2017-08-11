@@ -8,7 +8,6 @@ function TimeEvent (event, index) {
   this.event = event
   this.index = index
   this.media = null
-  console.log(event)
   Nanocomponent.call(this)
 }
 TimeEvent.prototype = Object.create(Nanocomponent.prototype)
