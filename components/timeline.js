@@ -16,7 +16,6 @@ Timeline.prototype.createElement = function (state, emit) {
   return html`
     <ul class="timeline">
       ${this.events.map(function (event, index) {
-        console.log(event)
         return TimeEvent(event, index).render(state, emit)
       })}
     </ul>

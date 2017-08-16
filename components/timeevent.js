@@ -36,7 +36,8 @@ TimeEvent.prototype.createElement = function (state, emit) {
 
 TimeEvent.prototype.update = function (state, emit) {
   // need to shallow diff event here
-  return this.event !== null && this.event !== undefined
+  this.media.render(state, emit)
+  return false // this.event !== null && this.event !== undefined
 }
 
 module.exports = TimeEvent
