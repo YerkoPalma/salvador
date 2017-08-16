@@ -1,6 +1,6 @@
 var Nanocomponent = require('nanocomponent')
-// var ImageGallery = require('./imagegallery')
-// var VideoGallery = require('./videogallery')
+var ImageGallery = require('./imagegallery')
+var VideoGallery = require('./videogallery')
 var html = require('bel')
 
 function TimeEvent (event, index) {
@@ -13,9 +13,9 @@ function TimeEvent (event, index) {
 TimeEvent.prototype = Object.create(Nanocomponent.prototype)
 
 TimeEvent.prototype.createElement = function (state, emit) {
-//  this.media = this.event.type === 'image'
-//                 ? ImageGallery(this.event, this.index)
-//                 : VideoGallery(this.event, this.index)
+  this.media = this.event.type === 'image'
+                 ? ImageGallery(this.event, this.index)
+                 : VideoGallery(this.event, this.index)
   return html`
     <li class="event">
       <input type="radio" name="tl-group" ${this.index === 0 ? 'checked' : ''} />
@@ -26,7 +26,7 @@ TimeEvent.prototype.createElement = function (state, emit) {
           <div class="content-inner">
             <h3>${this.event.title}</h3>
             <p>${this.event.description}</p>
-              
+              ${this.media.render(state, emit)}
           </div>
         </div>
       </div>
