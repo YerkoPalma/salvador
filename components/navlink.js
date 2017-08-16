@@ -1,5 +1,5 @@
 var Nanocomponent = require('nanocomponent')
-var html = require('bel')
+var html = require('choo/html')
 
 function Navlink (opt) {
   if (!(this instanceof Navlink)) return new Navlink(opt)

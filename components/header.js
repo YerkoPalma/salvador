@@ -1,5 +1,5 @@
 var Nanocomponent = require('nanocomponent')
-var html = require('bel')
+var html = require('choo/html')
 
 function Header () {
   if (!(this instanceof Header)) return new Header()

@@ -6,7 +6,7 @@ var Timeline = require('../components/timeline')
 var header = Header()
 var nextlink = Navlink('right')
 var prevlink = Navlink('left')
-var timeline = Timeline() 
+var timeline = Timeline()
 
 module.exports = function (state, emit) {
   return html`

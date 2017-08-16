@@ -1,5 +1,5 @@
 var Nanocomponent = require('nanocomponent')
-var html = require('bel')
+var html = require('choo/html')
 var TimeEvent = require('./timeevent')
 
 function Timeline () {

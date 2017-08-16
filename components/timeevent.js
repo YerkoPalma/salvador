@@ -1,7 +1,7 @@
 var Nanocomponent = require('nanocomponent')
 var ImageGallery = require('./imagegallery')
 var VideoGallery = require('./videogallery')
-var html = require('bel')
+var html = require('choo/html')
 
 function TimeEvent (event, index) {
   if (!(this instanceof TimeEvent)) return new TimeEvent(event, index)

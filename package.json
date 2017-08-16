@@ -2,7 +2,7 @@
   "name": "salvador",
   "version": "1.0.0",
   "description": "<h1 align=\"center\">Salvador Aarón Palma Navea</h1> <hr>",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
     "start": "bankai -V -A 0.0.0.0 index.js",
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
@@ -13,6 +13,7 @@
   "standard": {
     "ignore": [
       "service-worker.js",
+      "lib/",
       "dist/"
     ]
   },
@@ -27,24 +28,15 @@
   },
   "homepage": "https://github.com/YerkoPalma/salvador#readme",
   "devDependencies": {
-    "babel-preset-es2015": "^6.13.2",
-    "babelify": "^7.3.0",
     "bankai": "^9.0.0-1",
     "browserify": "^13.1.0",
-    "budo": "^8.3.0",
     "choo-log": "^7.2.1",
     "dependency-check": "^2.6.0",
-    "envify": "^3.4.1",
     "gh-pages": "^0.12.0",
-    "html-minifier": "^3.0.2",
-    "insert-css": "^0.2.0",
     "lightgallery.js": "0.0.3",
-    "live-server": "^1.0.0",
     "sheetify": "^5.0.5",
     "snazzy": "^4.0.1",
-    "standard": "^7.1.2",
-    "uglifyify": "^3.0.2",
-    "uglifyjs": "^2.4.10"
+    "standard": "^7.1.2"
   },
   "dependencies": {
     "choo": "^6.0.0-4",
