@@ -5,25 +5,14 @@
   "main": "src/app.js",
   "scripts": {
     "start": "bankai -V -A 0.0.0.0 index.js",
-    "dev": "budo src/app.js --open --live --pushstate --host 0.0.0.0 --port 8080 --",
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
-    "copy": "mkdir -p dist/src/assets && cp CNAME index.html dist/ && cp -R src/assets/ dist/src && cp -R src/data.json dist/",
-    "build:js": "browserify -e src/app.js -o dist/app.js -g uglifyify | uglifyjs",
-    "build": "npm run copy && NODE_ENV=production browserify -e src/app.js -o dist/app.js -t envify -g uglifyify | uglifyjs",
+    "build": "bankai build index.js dist/",
     "deploy": "npm run build && gh-pages -d dist",
     "test": "npm run deps && standard --verbose | snazzy"
-  },
-  "browserify": {
-    "transform": [
-      "sheetify/transform",
-      "babelify"
-    ]
   },
   "standard": {
     "ignore": [
       "service-worker.js",
-      "src/lg-utils.js",
-      "src/lightgallery.js",
       "dist/"
     ]
   },
