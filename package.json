@@ -6,7 +6,7 @@
   "scripts": {
     "start": "bankai -V -A 0.0.0.0 index.js",
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
-    "build": "NODE_ENV=production bankai build index.js dist/ && workbox-cli generate:sw",
+    "build": "NODE_ENV=production bankai build index.js dist/ && workbox-cli generate:sw && cp manifest.json favicon.ico dist/",
     "deploy": "npm run build && gh-pages -d dist",
     "test": "npm run deps && standard --verbose | snazzy"
   },
@@ -14,7 +14,8 @@
     "ignore": [
       "service-worker.js",
       "lib/",
-      "dist/"
+      "dist/",
+      "workbox-cli-config.js"
     ]
   },
   "repository": {
