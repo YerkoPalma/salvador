@@ -7,7 +7,9 @@ css('./style.css', { global: true })
 var app = choo()
 if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-log')())
+  app.use(require('choo-service-worker/clear')())
 }
+app.use(require('choo-service-worker')())
 app.use(function (state, emitter) {
   var allYears = require('./data.json')
 

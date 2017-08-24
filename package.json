@@ -6,7 +6,7 @@
   "scripts": {
     "start": "bankai -V -A 0.0.0.0 index.js",
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
-    "build": "bankai build index.js dist/",
+    "build": "NODE_ENV=production bankai build index.js dist/ && workbox-cli generate:sw",
     "deploy": "npm run build && gh-pages -d dist",
     "test": "npm run deps && standard --verbose | snazzy"
   },
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "choo": "^6.0.0-4",
+    "choo-service-worker": "^2.2.0",
     "lg-video.js": "0.0.3",
     "nanocomponent": "^6.1.0"
   }
