@@ -40,7 +40,7 @@
     "standard": "^7.1.2"
   },
   "dependencies": {
-    "choo": "^6.0.0-4",
+    "choo": "^6.0.0",
     "choo-service-worker": "^2.2.0",
     "lg-video.js": "0.0.3",
     "nanocomponent": "^6.1.0"

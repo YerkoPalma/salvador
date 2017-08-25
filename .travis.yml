@@ -2,9 +2,11 @@ node_js:
 - "6"
 language: node_js
 before_deploy:
+  - npm install -g workbox-cli
   - npm run build
 deploy:
-  provider: surge
-  project: ./dist/
-  domain: salvador.palmanavea.com
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  fqdn: salvador.palmanavea.com
   skip_cleanup: true
