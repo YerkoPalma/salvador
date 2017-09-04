@@ -149,5 +149,81 @@
       "description": "Mis papas me están arreglando, para mi cumpleaños, no se qué es eso, pero hay pastel y todos cantan, sobretodo yo ^^",
       "images": ["images/second/7-ago.jpg"]
     }
+  ],
+  [
+    {
+      "date": "01 Ene",
+      "title": "Paseo familiar",
+      "thumbnail": "user-31",
+      "type": "image",
+      "description": "Con mis papas y abuelos salimos a pasear, mis tíos se van a una piscina, pero mis papas no quieren ir y yo tampoco :) nos gusta más estar acá sequitos",
+      "images": ["images/third/1-ene.jpg"]
+    },
+    {
+      "date": "28 Ene",
+      "title": "Matrimonio",
+      "thumbnail": "user-32",
+      "type": "image",
+      "description": "Mis papas se vistieron muy elegantes (y yo también) dicen que hoy se 'casan'. Yo no se que es eso, pero lo pasé bien por que habia mucha gente y un perro pequeño que me dicen se llama Aukan... Todo estuvo lindo, pero no se por qué mis papas no volvieron conmigo :(",
+      "images": ["images/third/28-ene.jpg"]
+    },
+    {
+      "date": "23 Feb",
+      "title": "Con mis amigo/as",
+      "thumbnail": "user-33",
+      "type": "image",
+      "description": "Me gustán estos días con solcito, por que de vez en cuando vienen a visitarme gente solo para jugar conmigo. Acá estoy con mis tíos Isidora y Lucas, y mi prima Josefina.",
+      "images": ["images/third/23-feb.jpg"]
+    },
+    {
+      "date": "27 Mar",
+      "title": "De paseo con mis papas y el Aukan",
+      "thumbnail": "user-34",
+      "type": "video",
+      "videoThumbnail": "27-mar-thumb.jpg",
+      "description": "De vez en cuando salimos con mis papis y el Aukan a dar vueltas, jugamos en los juegos o en la cancha, aunque me da tos me gusta jugar en familia.",
+      "images": ["images/third/27-mar.mp4"]
+    },
+    {
+      "date": "09 Abr",
+      "title": "Aukan",
+      "thumbnail": "user-35",
+      "type": "image",
+      "description": "El Aukan esta cada vez más grande, aunque mis papas insisten en que es una 'guagua', yo creo que ya es un perro grande",
+      "images": ["images/third/9-abr.jpg"]
+    },
+    {
+      "date": "03-Jun",
+      "title": "Casa nueva",
+      "thumbnail": "user-36",
+      "type": "image",
+      "description": "Con mis papas nos cambiamos de casa, ya no vivmos con mis abuelos, aunque a mi me gustaba mis papas están felices y mis abuelos también. La casa nueva no tiene nada, pero de a poco mis papas le agregan cosas, por lo que tenemos que trabajar. Creo que me acostumbrearé, y por ahora me gusta, por que vienen hartos amigos a vernos.",
+      "images": ["images/third/3-jun.jpg"]
+    },
+    {
+      "date": "13 Jul",
+      "title": "Casa nueva denuevo",
+      "thumbnail": "user-37",
+      "type": "image",
+      "description": "¡Cada vez me gusta más mi casa nueva! Porque nos vienen a ver varios amigo/as y familiares, aparte con el Aukan y el Taro jugamos harto y con mis papas veo tele y jugamos más.",
+      "images": ["images/third/13-jul.jpg"]
+    },
+    {
+      "date": "17 Jul",
+      "title": "Te amo mucho",
+      "thumbnail": "user-38",
+      "type": "video",
+      "videoThumbnail": "17-jul-thumb.jpg",
+      "description": "Mi mamá siempre me enseña a decir cosas nuevas. No se que significan, pero ella se pone muy feliz cuando lo hago, así que seguiré diciendoselo cuando me lo pida ^^",
+      "images": ["images/third/17-jul.mp4"]
+    },
+    {
+      "date": "02 Sep",
+      "title": "Cumpleaños",
+      "thumbnail": "user-39",
+      "type": "image",
+      "description": "¡Hoy vinieron muchas personas para cantar conmigo cumpleaños feliz! Estaba tan feliz que hasta cantaron dos veces conmigo, los amo a todos y todas :D",
+      "images": ["images/third/2-sep.jpg"]
+    }
   ]
 ]
