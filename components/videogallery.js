@@ -16,6 +16,10 @@ Videogallery.prototype = Object.create(Nanocomponent.prototype)
 
 Videogallery.prototype.createElement = function (state, emit) {
   var self = this
+  var numeral = 'first'
+  numeral = state.current === 1
+            ? 'first' : state.current === 2
+            ? 'second' : 'third'
   return html`
     <div>
       ${self.videos.map((video, index) => {
@@ -31,7 +35,7 @@ Videogallery.prototype.createElement = function (state, emit) {
         ${self.videos.map((video, index) => {
           return html`
             <li data-sub-html="${self.title}" data-html="#${self.id}" >
-              <img src="assets/images/second/${self.thumbnail}" />
+              <img src="assets/images/${numeral}/${self.thumbnail}" />
             </li>`
         })}
       </ul>
