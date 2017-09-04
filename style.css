@@ -276,6 +276,41 @@ a {
   background-image: url(assets/images/second/7-ago-100x100.jpg);
 }
 
+.user-31 {
+  background-image: url(assets/images/third/1-ene-100x100.jpg);
+}
+
+.user-32 {
+  background-image: url(assets/images/third/28-ene-100x100.jpg);
+}
+
+.user-33 {
+  background-image: url(assets/images/third/23-feb-100x100.jpg);
+}
+
+.user-34 {
+  background-image: url(assets/images/third/27-mar-100x100.jpg);
+}
+
+.user-35 {
+  background-image: url(assets/images/third/9-abr-100x100.jpg);
+}
+
+.user-36 {
+  background-image: url(assets/images/third/3-jun-100x100.jpg);
+}
+
+.user-37 {
+  background-image: url(assets/images/third/13-jul-100x100.jpg);
+}
+
+.user-38 {
+  background-image: url(assets/images/third/17-jul-100x100.jpg);
+}
+
+.user-39 {
+  background-image: url(assets/images/third/2-sep-100x100.jpg);
+}
 /* Transparent Checkbox/radio hack: leave the checkbox on top, hide it with opacity 0 */
 
 .event label,

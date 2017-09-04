@@ -17,7 +17,7 @@ app.use(function (state, emitter) {
   state.title = 'Salvador Aarón Palma Navea'
   state.subtitle = 'Su primer añito'
   state.current = 1
-  state.availaibleYears = 2
+  state.availaibleYears = 3
   state._events = allYears[0]
   emitter.on('setYear', function (year) {
     var numeral = 'primer'
